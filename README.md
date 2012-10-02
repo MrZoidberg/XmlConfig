@@ -13,11 +13,10 @@ XmlConfig offers the following:
  - You can store the configuration in encrypted or plain xml files
  - Support of settings changed event
 
- Sample
- ----------
+Sample
+----------
 
- ``` csharp
-
+``` csharp
 class TestSettings: Settings
 {
     [SettingItem("RegistrationInfo")]
@@ -60,3 +59,4 @@ SettingsManager.GetSettings<TestSettings>().RegistrationInfo = new ServerRegistr
                                                                                           "http://google.com");
 //Save settings                                                                                          
 SettingsManager.Save();
+```
